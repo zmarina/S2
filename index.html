@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularul meu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Formularul meu</h1>
+            <p>Multumesc pentru ajutor</p>
+        </header>
+    <div class="form-container">
+     <form >
+         <div class="form-group">
+         <label for="name">Nume</label>
+         <input type="text" name="name" id="name" placeholder="Numele tau">
+         </div>
+ 
+         <div class="form-group">
+             <label for="email">Email</label>
+             <input type="text" name="email" id="email" placeholder="Emailul tau">
+        </div> 
+ 
+        <div class="form-group">
+         <label for="role">Functia ta</label>
+         <select name="role" id="role">
+         <option value="student">Student</option>
+         <option value="job">Full time job</option>
+         <option value="noans">Nu stiu</option>
+         <option value="other">Altceva</option>
+         </select>
+        </div> 
+ 
+        
+ 
+        <div class="form-group rec">
+            <p>Ne recomanzi?</p>
+         <label for="rec-sure">
+         <input type="radio"
+          name="recommendation" 
+          id="rec-sure"
+         value="sure" 
+         class="input-radio"
+         checked
+         >
+         Sigur
+     </label>
+ 
+     <label for="rec-meybe"">
+ 
+         <input type="radio"
+          name="recommendation" 
+          id="rec-meybe"
+         value="meybe" 
+         class="input-radio"
+         
+         >
+         Poate
+        </label>
+ 
+        <label for="rec-no">
+         <input type="radio"
+          name="recommendation" 
+          id="rec-no"
+         value="no" 
+         class="input-radio"
+        
+         >
+         Nu
+         </label>
+        
+    </div> 
+ 
+    <div class="form-group">
+     <label for="source">Cum ai aflat de noi</label>
+     <select name="source" id="source">
+     <option value="insta">Instagram</option>
+     <option value="fb">Facebook</option>
+     <option value="mail">Email</option>
+     <option value="prieten">Prieten</option>
+     </select>
+    </div> 
+ 
+    <div class="form-group learn">
+     <p>Ce ai vrea sa inveti?
+        <br>
+         <span>
+             (selecteaza ce te intereseaza)
+         </span>
+     </p>
+     <label for="frontend">
+         <input type="checkbox"
+          name="preference" 
+          id="frontend"
+         value="frontend" 
+         class="input-checkbox"
+         
+         >
+         Front end Development
+     </label>
+ 
+     <label for="backend">
+ 
+         <input type="checkbox"
+          name="preference" 
+          id="backend"
+         value="backend" 
+         class="input-checkbox"
+         
+         >
+         Back end Development
+        </label>
+ 
+        <label for="fullstack">
+         <input type="checkbox"
+          name="preference" 
+          id="fullstack"
+         value="fullstack" 
+         class="input-checkbox"
+         
+         >
+         Tot
+         </label>
+        
+  </div>
+ 
+  
+    <div class=form-group">
+     <p>Ai vreo sugestie? </p>
+        <textarea 
+        name="comments" 
+        id="comments" 
+       class="input-textarea"
+       placeholder="Opinia ta"
+       ></textarea>
+    
+  </div>
+ 
+  <div class="form-group button-container">
+     <button type="submit" id="submit" class = "submit-button">Trimite datele</button>
+     <br>
+     <button type="reset" id="reset" class = "reset-button">Reset</button>
+  </div>
+ 
+     </form>
+ 
+    </div>
+</div>
+</body>
+</html>
